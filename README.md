@@ -16,24 +16,32 @@ SQLite (установлен по умолчанию с Django)
 
 Virtualenv (рекомендуется, но не обязательно)
 
-## Установка
+## 1. Установка
 
 Следуйте этим шагам, чтобы развернуть и запустить проект локально:
 
 Клонирование репозитория
+
 ```git clone https://github.com/notawhalebeats/car_management.git cd car_management``` 
+
 ## 2. Создайте и активируйте виртуальное окружение
 
 Для Windows: ```python -m venv venv venv\Scripts\activate```
 
-Для macOS/Linux: ```python3 -m venv venv source venv/bin/activate ``` ##3. Установите зависимости
+Для macOS/Linux: ```python3 -m venv venv source venv/bin/activate ``` 
+
+## 3. Установите зависимости
 
 Убедитесь, что находитесь в активированном виртуальном окружении, затем выполните: ``` pip install -r requirements.txt ```
+
 ## 4. Выполните миграции базы данных
+
  ``` python manage.py migrate ``` 
+
 ## 5. Создайте суперпользователя
 
 Для доступа к админ-панели создайте суперпользователя: ``` python manage.py createsuperuser ```
+
 ## 6. Запуск проекта
 
 Теперь можно запустить локальный сервер: ``` python manage.py runserver```
