@@ -26,8 +26,8 @@ Virtualenv (рекомендуется, но не обязательно)
 
 1. Клонирование репозитория
 '''
-git clone https://github.com/yourusername/car-management-system.git
-cd car-management-system
+git clone https://github.com/notawhalebeats/car_management.git
+cd car_management
 '''
 ##2. Создайте и активируйте виртуальное окружение
 
