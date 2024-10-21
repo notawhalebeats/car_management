@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Car{% endblock %}
+
+{% block content %}
+    <div>
+        <h2>Edit Car: {{ car.model }} (ID: {{ car.id }})</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label for="make">Make:</label>
+                <input type="text" name="make" id="make" value="{{ car.make }}" required>
+            </div>
+            <div>
+                <label for="model">Model:</label>
+                <input type="text" name="model" id="model" value="{{ car.model }}" required>
+            </div>
+            <div>
+                <label for="year">Year:</label>
+                <input type="number" name="year" id="year" value="{{ car.year }}" required>
+            </div>
+            <div>
+                <label for="color">Color:</label>
+                <input type="text" name="color" id="color" value="{{ car.color }}" required>
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+{% endblock %}

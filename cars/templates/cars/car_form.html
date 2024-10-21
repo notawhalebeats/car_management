@@ -1,0 +1,13 @@
+{% extends './base.html' %}
+
+{% block title %}Список автомобилей{% endblock %}
+
+{% block content %}
+<h1>{% if car.id %}Редактирование автомобиля{% else %}Добавление автомобиля{% endif %}</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сохранить</button>
+</form>
+{% endblock %}
